@@ -29,6 +29,7 @@
 
 .app {
   width: 100%;
+  height: 73%;
 }
 /*.bg {
   position: absolute;
@@ -65,14 +66,17 @@
   width: var(--width);
   margin-left: auto;
   margin-right: auto;
+  height: 89%;
 }
 .wrapper > div {
   width: calc(var(--width) / 3);
-  height: 515px;
+  /*height: 515px;*/
+  height: 100%;
   background: transparent;
 }
 .box-inner {
-  height: 480px;
+  /*height: 480px;*/
+  height: 92%;
   width: 320px;
   margin: 0 auto;
   background: linear-gradient(135deg, transparent 25px, var(--blue) 25px);
@@ -84,7 +88,8 @@
 }
 .box-inner-white {
   position: relative;
-  height: 471px;
+  /*height: 471px;*/
+  height: 98%;
   width: 310px;
   margin: 0 auto;
   background: url(/assets/images/cat.png), linear-gradient(135deg, transparent 25px, white 25px);
