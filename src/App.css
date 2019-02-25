@@ -210,3 +210,18 @@ h2 {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1015px) {
+  html, body {
+    height: initial;
+}
+  .wrapper > div {
+    width: calc(var(--width)/2);
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper {width: 100%}
+  .wrapper > div {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
