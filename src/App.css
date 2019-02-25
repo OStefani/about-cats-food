@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: "Exo2.0";
-  src: url(/assets/fonts/Exo2.0-Thin.otf) format('opentype');
+  src: url(/assets/fonts/Exo2.0-Thin.otf) format('opentype'), url('/assets/fonts/Exo2.0-Thin.woff') format('woff'), url('/assets/fonts/Exo2.0-Thin.ttf') format('truetype'), url('/assets/fonts/Exo2.0-Thin.svg') format('svg');
 }
 @font-face {
   font-family: "Trebuchet MS";
