@@ -19,7 +19,11 @@ function mapDispatchToProps(dispatch) {
 class App extends Component {
  
   render() {
-    
+    let isIE = /*@cc_on!@*/false || !!document.documentMode;
+    if (isIE) console.log('ie is used')
+    // Edge 20+
+    let isEdge = !isIE && !!window.StyleMedia;
+    if (isEdge) console.log('edge is used');
     return (     
       <div className="app">        
         <h1 className='header'>Ты сегодня покормил кота?</h1>
