@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: "Trebuchet MS";
-  src: url(/assets/fonts/trebuc.ttf);
+  src: url(/assets/fonts/trebuc.ttf), url('fonts/trebuc.woff') format('woff');
 }
 * {
   box-sizing: border-box;
