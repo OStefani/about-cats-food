@@ -5,7 +5,6 @@ import DisplayBadge from './DisplayBadge';
 import DisplaySlogan from './DisplaySlogan';
 
 function Box(props) {
-    let shadowDiv = <div className = 'shadow-div'></div>
     return (
         <div className={props.goods.amount<1 ? 'disabled': 'box-wrapper'}>
             <div onClick={()=> props.selectHandler(props.goods.id)} className={props.goods.amount < 1 ? 'box-inner-disabled box-inner' : props.selected ? 'box-inner-red box-inner' : 'box-inner'}>
@@ -14,7 +13,7 @@ function Box(props) {
                 
                 <DisplayTitle name={props.goods.name}  />
                 <DisplayFeatures features = {props.goods.features} />
-                <DisplayBadge size={props.goods.size} selected ={props.selected}/>
+                <DisplayBadge size={props.goods.size} selected ={props.selected} amount = {props.goods.amount}/>
                 
                 </div>  
                 {props.goods.amount < 1? <div className = 'shadow-div'></div>: null}              

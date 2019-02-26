@@ -161,6 +161,9 @@ h2 {
   background: var(--blue);
   transition: background .5s ease;
 }
+.badge-gray {
+  background: rgb(179, 179, 179);
+}
 .badge-red {
   background: var(--red);
   transition: background .5s ease;
@@ -186,7 +189,7 @@ h2 {
   filter: grayscale(0.9);
   height: 480px;
   width: 320px; 
-  background: linear-gradient(135deg, transparent 25px, var(--blue) 25px);  
+  background: linear-gradient(135deg, transparent 25px, gray 25px);  
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
@@ -196,7 +199,7 @@ h2 {
   width: 320px;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.7;
   background: linear-gradient(135deg, transparent 25px, gray 25px);
 }
 
